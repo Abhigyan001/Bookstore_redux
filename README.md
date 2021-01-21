@@ -17,7 +17,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested yo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [DEMO LINK]()
+## Live Demo: [DEMO LINK](https://mybookstorecms.herokuapp.com/)
 
 ## Prerequisities
 
@@ -52,14 +52,14 @@ Most important, enjoy the app!<br>
 - Twitter: [@Twitter](https://twitter.com/abhigyan_001)
 
 
-### 🤝 CONTRIBUTING
-Contributions, issues and feature requests are welcome!
+## 🤝 Contributing
 
-## SHOW SUPPORT
+Our favourite contributions are those that help us improve the project, whether with a contribution, an issue, or a feature request!
 
-Give a ⭐️ if you like this project!
+## Show your support
 
-## ACKNOWLEDGMENTS
+If you've read this far....give us a ⭐️!
 
-- Hat tip to anyone whose code was used
-- Inspiration
+## 📝 License
+
+This project is licensed by Microverse and the Odin Project
