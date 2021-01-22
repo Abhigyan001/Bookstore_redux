@@ -25,3 +25,9 @@ code {
     'Courier New',
     monospace;
 }
+
+.table-main {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+}
