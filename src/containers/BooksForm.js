@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
-const categories = [  
+const categories = [
   'Action',
   'Biography',
   'History',
   'Horror',
   'Kids',
   'Learning',
-  'Sci-Fi'
+  'Sci-Fi',
 ];
 
 class BooksForm extends React.Component {

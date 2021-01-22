@@ -16,7 +16,6 @@ export default function Books({ book, handleRemoveBook }) {
   );
 }
 
-
 Books.propTypes = {
   book: PropTypes.shape({
     id: PropTypes.number,
