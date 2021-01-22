@@ -1,23 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const TR = styled.tr`
-  background: rgba(127, 129, 133, 0.431);
-  color: white;
-  text-align: center;
-  width: 100%;
-`;
-
-export default function Books({ book }) {
+export default function Books({ book, handleRemoveBook }) {
   return (
-    <TR>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-    </TR>
+    <tr className="allRow" key={book.id}>
+      <td className="row">{book.id}</td>
+      <td className="row">{book.title}</td>
+      <td className="row">{book.category}</td>
+      <td className="row">
+        <button className="button3" type="submit" onClick={() => handleRemoveBook(book)}>
+          Remove Book
+        </button>
+      </td>
+    </tr>
   );
 }
+
 
 Books.propTypes = {
   book: PropTypes.shape({
@@ -25,4 +23,5 @@ Books.propTypes = {
     title: PropTypes.string,
     category: PropTypes.string,
   }).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };

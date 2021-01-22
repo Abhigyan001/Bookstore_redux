@@ -27,9 +27,9 @@ code {
 }
 
 .table-main {
-  width: 600px;
-  height: 300px;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
 }
 
 .inputForm {
@@ -37,7 +37,7 @@ code {
   text-align: center;
   width: 700px;
   padding: 10px;
-  margin-left: -10%;  
+  margin: 0 auto;  
 }
 
 select {
@@ -64,4 +64,25 @@ button {
   width: 80px;
   outline: none;
   cursor: pointer;
+}
+
+.button3 {
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 10px;
+  width: 120px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(243, 80, 167);
+}
+
+.row {
+  padding: 2%;
+}
+
+.allRow {
+  background: rgb(178, 178, 226);
+  color: rgb(24, 22, 22);
+  text-align: center;
+  width: 100%;
 }
