@@ -37,10 +37,31 @@ code {
   text-align: center;
   width: 700px;
   padding: 10px;
+  margin-left: -10%;  
+}
+
+select {
+  padding: 5px;
+  background: rgba(140, 235, 251, 0.746);
+  color: black;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin-right: 2%;
+  margin-left: 3%;
+  outline: none;
 }
 
 button {
   background-color: rgb(64, 115, 197);
   color: white;
   padding: 5px;
+}
+
+.button2 {
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 3px;
+  width: 80px;
+  outline: none;
+  cursor: pointer;
 }
