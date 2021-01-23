@@ -1,35 +1,35 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Book from '../components/Book';
+import { handleRemoveBook } from '../actions/index';
 
-const TABLE = styled.table`
-  width: 800px
-  height: 600px
-`;
-
-const BooksList = props => {
-  const { state } = props;
-  return (
-    <TABLE className="table-main">
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {state.map(book => <Book key={book.id} book={book} />)}
-      </tbody>
-    </TABLE>
-  );
-};
-
+const BooksList = ({ book, handleRemoveBook }) => (
+  <table className="table-main">
+    <thead>
+      <tr>
+        <th className="row">Book ID</th>
+        <th className="row">Title</th>
+        <th className="row">Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      {book.map(book => <Book key={Math.random() * 1000} book={book} handleRemoveBook={handleRemoveBook} />)}
+    </tbody>
+  </table>
+);
 BooksList.propTypes = {
-  state: PropTypes.instanceOf(Array).isRequired,
+  book: PropTypes.instanceOf(Array).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({ state });
-export default connect(mapStateToProps)(BooksList);
+const stateToProps = book => ({ book });
+
+const dispatchToProps = dispatch => ({
+  handleRemoveBook: book => {
+    dispatch(handleRemoveBook(book));
+  },
+});
+
+export default connect(stateToProps, dispatchToProps)(BooksList);
