@@ -1,4 +1,4 @@
-const filterReducer = (state = 'All', action) => {
+const filterBooks = (state = 'All', action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
       return action.book;
@@ -7,4 +7,4 @@ const filterReducer = (state = 'All', action) => {
   }
 };
 
-export default filterReducer;
+export default filterBooks;
