@@ -91,3 +91,14 @@ button {
   margin: 2% 40%;
   width: 100%;
 }
+
+.app-bg {
+  background-color: #F4F5F9;
+  padding: 4%;
+  height: 100vh;
+}
+
+.container {
+  background-color: #FAFAFA;
+  padding: 1.2em;
+}
