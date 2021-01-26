@@ -66,27 +66,6 @@ button {
   cursor: pointer;
 }
 
-.button3 {
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 10px;
-  width: 120px;
-  outline: none;
-  cursor: pointer;
-  background-color: rgb(243, 80, 167);
-}
-
-.row {
-  padding: 2%;
-}
-
-.allRow {
-  background: rgb(178, 178, 226);
-  color: rgb(24, 22, 22);
-  text-align: center;
-  width: 100%;
-}
-
 .category {
   margin: 2% 40%;
   width: 100%;
@@ -101,4 +80,79 @@ button {
 .container {
   background-color: #FAFAFA;
   padding: 1.2em;
+}
+
+.books {
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  background-color: rgb(246, 246, 244);
+  border-radius: 0.3em;
+  display: flex;
+  height: auto;
+  margin-bottom: 1em;
+  padding: 14px;
+}
+
+.right-side {
+  flex-basis: 30%;
+  justify-self: center;
+  padding-left: 2.5%;
+  text-align: center;
+}
+
+.middle {
+  align-items: center;
+  border-right: 1px solid #ddd;
+  display: inline-flex;
+  flex-basis: 20%;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.left-side {
+  flex-basis: 50%;
+}
+
+.progress {
+  width: 40px;
+  height: 40px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid blue;
+}
+
+.percentage {
+  font-weight: 300;
+  color: blue;
+}
+
+.completed {
+  color: gray;
+  font-weight: 300;
+}
+
+.category {
+  color: grey;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-weight: 800;
+  margin-bottom: -2px;
+}
+
+h2.title {
+  color: blue;
+}
+
+.btn {
+  padding: 10px;
+  background: blue;
+  color: white;
+  text-align-last: center;
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  outline: none;
 }

@@ -3,16 +3,28 @@ import PropTypes from 'prop-types';
 
 export default function Books({ book, handleRemoveBook }) {
   return (
-    <tr className="allRow" key={book.id}>
-      <td className="row">{book.id}</td>
-      <td className="row">{book.title}</td>
-      <td className="row">{book.category}</td>
-      <td className="row">
-        <button className="button3" type="submit" onClick={() => handleRemoveBook(book)}>
+    <div className="books" key={book.id}>
+      <div className="left-side">
+        <h5 className="category">{book.category}</h5>
+        <h2 className="title">{book.title}</h2>
+        <div className="actions">
+          <button type="button" disabled>Comments</button>
+          <button type="button" disabled>Edit</button>
+        </div>
+      </div>
+      <div id="middle">
+        <div className="progress" />
+        <div className="percent">
+          <h1 className="percentage">64%</h1>
+          <h4 className="completed">Complete</h4>
+        </div>
+      </div>
+      <div className="right-side">
+        <button type="button" className="btn" onClick={() => handleRemoveBook(book)}>
           Remove Book
         </button>
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 }
 
