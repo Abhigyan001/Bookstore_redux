@@ -12,14 +12,13 @@ const BooksList = ({
   const filteredBooks = (filter !== 'All') ? books.filter(book => book.category === filter) : books;
   return (
     <div>
-      <div>
+      <div className="headerContain">
         <header className="header">
           <h3>Bookstore CMS</h3>
           <h4>BOOKS</h4>
           <h4>CATEGORIES:</h4>
           <CategoryFilter changeFilter={changeFilter} />
         </header>
-
       </div>
       <div>
         {filteredBooks.map(book => (

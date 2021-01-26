@@ -41,9 +41,9 @@ select {
   color: black;
   border: 1px solid gray;
   border-radius: 12px;
-  margin-right: 2%;
-  margin-left: 3%;
+  margin-right: 2%;  
   outline: none;
+  font-size: 20px;
 }
 
 button {
@@ -89,6 +89,7 @@ button {
   justify-self: center;
   padding-left: 2.5%;
   text-align: center;
+  margin-left: 10%;
 }
 
 .middle {
@@ -109,13 +110,13 @@ button {
   height: 40px;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
-  border-right: 10px solid blue;
-  border-bottom: 10px solid blue;
+  border-right: 10px solid #0290FF;
+  border-bottom: 10px solid #0290FF;
 }
 
 .percentage {
   font-weight: 300;
-  color: blue;
+  color: #0290FF;
 }
 
 .completed {
@@ -129,17 +130,16 @@ button {
     Arial,
     Helvetica,
     sans-serif;
-  font-weight: 800;
-  margin-bottom: -2px;
+  font-weight: 800;  
 }
 
 h2.title {
-  color: blue;
+  color: #0290FF;
 }
 
 .btn {
   padding: 10px;
-  background: blue;
+  background: #0290FF;
   color: white;
   text-align-last: center;
   width: 50%;
@@ -164,7 +164,7 @@ h2.title {
 
 .btn2 {
   padding: 10px;
-  background: blue;
+  background: #0290FF;
   color: white;
   text-align-last: center;
   width: 25%;
@@ -175,13 +175,97 @@ h2.title {
 }
 
 .header {
-  display: flex;
-  background-color: white;
-  width: 100%;  
-  margin-bottom: 15px;
+  display: flex;  
+  width: 85%;  
+  margin: 0 auto;
   align-items: center;
   border-radius: 0.3em;
   justify-content: space-between;
-  color: blue;
+  color: #0290FF;
   font-size: 24px;
+  padding: 2% 4%;
+}
+
+.headerContain {
+  width: 102%;
+  margin-left: -1%;
+  margin-top: -1%;
+  background-color: white;  
+}
+
+.newbook {
+  width: 90%;
+  margin: 3% auto;
+}
+
+.actions {
+  text-align: left;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  font-weight: 100;
+  color: rgb(128, 126, 126);
+}
+
+.actions button:nth-child(1) {
+  padding-left: 0;
+}
+
+.actions button:nth-child(2) {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0 8px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 720px) {
+  .actions button:nth-child(2) {
+    padding: 6px;
+    margin: 0;
+  }
+
+  .books {
+    flex-wrap: wrap;
+  }
+
+  .book-logo {
+    width: 100px;
+    height: 90px;
+  }
+
+  .left-side {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  .middle {
+    flex-basis: 100%;
+    padding: 12px 0;
+    border-right: none;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+
+  .categories {
+    text-align: center;
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .cat-title {
+    display: none;
+  }
+
+  .right-side {
+    flex-basis: 100%;
+    text-align: right;
+    padding-left: 0;
+    margin-top: -48%;
+  }
 }

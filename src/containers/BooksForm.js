@@ -58,7 +58,7 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div>
+      <div className="newbook">
         <p className="input-form">ADD A NEW BOOK</p>
         <form onSubmit={this.handleSubmit} className="input-form">
           <input name="title" className="book-input" type="text" value={title} onChange={this.handleChange} />

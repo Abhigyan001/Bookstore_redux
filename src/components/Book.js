@@ -16,7 +16,7 @@ export default function Books({ book, handleRemoveBook }) {
         <div className="progress" />
         <div className="percent">
           <h1 className="percentage">64%</h1>
-          <h4 className="completed">Complete</h4>
+          <h4 className="completed">Completed </h4>
         </div>
       </div>
       <div className="right-side">
