@@ -13,14 +13,14 @@ export default function Books({ book, handleRemoveBook }) {
         </div>
       </div>
       <div id="middle">
-        <div className="progress" />
+        <div className="progressbar" />
         <div className="percent">
           <h1 className="percentage">64%</h1>
           <h4 className="completed">Completed </h4>
         </div>
       </div>
       <div className="right-side">
-        <button type="button" className="btn" onClick={() => handleRemoveBook(book)}>
+        <button type="button" className="button1" onClick={() => handleRemoveBook(book)}>
           Remove Book
         </button>
       </div>

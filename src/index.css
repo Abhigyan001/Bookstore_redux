@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F4F5F9;
+  background-color: #f4f5f9;
 }
 
 code {
@@ -37,11 +37,11 @@ code {
 
 select {
   padding: 5px;
-  background: rgba(140, 235, 251, 0.746);
-  color: black;
+  background: #0290ff;
+  color: white;
   border: 1px solid gray;
   border-radius: 12px;
-  margin-right: 2%;  
+  margin-right: 2%;
   outline: none;
   font-size: 20px;
 }
@@ -52,22 +52,13 @@ button {
   padding: 5px;
 }
 
-.button2 {
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 3px;
-  width: 80px;
-  outline: none;
-  cursor: pointer;
-}
-
-.app-bg {  
+.app-bg {
   padding: 4%;
   height: 100vh;
 }
 
 .container {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 1.2em;
   box-shadow: 0 0 60px 0 var(--black-5);
 }
@@ -105,18 +96,18 @@ button {
   flex-basis: 50%;
 }
 
-.progress {
+.progressbar {
   width: 40px;
   height: 40px;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
-  border-right: 10px solid #0290FF;
-  border-bottom: 10px solid #0290FF;
+  border-right: 10px solid #0290ff;
+  border-bottom: 10px solid #0290ff;
 }
 
 .percentage {
   font-weight: 300;
-  color: #0290FF;
+  color: #0290ff;
 }
 
 .completed {
@@ -126,20 +117,17 @@ button {
 
 .category {
   color: grey;
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-  font-weight: 800;  
+  font-weight: 600;
+  font-size: 20px;
 }
 
 h2.title {
-  color: #0290FF;
+  color: #0290ff;
 }
 
-.btn {
+.button1 {
   padding: 10px;
-  background: #0290FF;
+  background: #0290ff;
   color: white;
   text-align-last: center;
   width: 50%;
@@ -162,9 +150,9 @@ h2.title {
   height: 30px;
 }
 
-.btn2 {
+.button2 {
   padding: 10px;
-  background: #0290FF;
+  background: #0290ff;
   color: white;
   text-align-last: center;
   width: 25%;
@@ -175,13 +163,13 @@ h2.title {
 }
 
 .header {
-  display: flex;  
-  width: 85%;  
+  display: flex;
+  width: 85%;
   margin: 0 auto;
   align-items: center;
   border-radius: 0.3em;
   justify-content: space-between;
-  color: #0290FF;
+  color: #0290ff;
   font-size: 24px;
   padding: 2% 4%;
 }
@@ -190,7 +178,7 @@ h2.title {
   width: 102%;
   margin-left: -1%;
   margin-top: -1%;
-  background-color: white;  
+  background-color: white;
 }
 
 .newbook {
