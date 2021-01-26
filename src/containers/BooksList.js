@@ -13,22 +13,19 @@ const BooksList = ({
   return (
     <div>
       <div>
-        <CategoryFilter changeFilter={changeFilter} />
+        <header className="header">
+          <h3>Bookstore CMS</h3>
+          <h4>BOOKS</h4>
+          <h4>CATEGORIES:</h4>
+          <CategoryFilter changeFilter={changeFilter} />
+        </header>
+
       </div>
-      <table className="table-main">
-        <thead>
-          <tr>
-            <th className="row">Book ID</th>
-            <th className="row">Title</th>
-            <th className="row">Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredBooks.map(book => (
-            <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
-          ))}
-        </tbody>
-      </table>
+      <div>
+        {filteredBooks.map(book => (
+          <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
+        ))}
+      </div>
     </div>
   );
 };
